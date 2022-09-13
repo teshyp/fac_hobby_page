@@ -1,4 +1,4 @@
-/* Global reset taken from joshwcomeau.com/css/custom-css-reset */
+/* Global reset taken from joshwcomeau.com/css/custom-css-reset
 
 /*
   1. Use a more-intuitive box-sizing model.
@@ -70,6 +70,18 @@ h6 {
   isolation: isolate;
 }
 
+body {
+background-image: url(/images/wallpaper.jpeg);
+background-repeat: no-repeat;
+background-size: 100%;
+display: flex;
+justify-content: center;
+}
+
+#nav-section {
+  width: 100%;
+}
+
 #header-logo {
   height: 4rem;
 }
@@ -81,8 +93,7 @@ h6 {
 #container {
   border-style: solid;
   border-color: red;
-  width: 80vh;
-  height: 70vh;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,57 +101,99 @@ h6 {
 }
 
 header {
+  margin: 1rem 0 1rem 0;
+  padding: 0.5rem 0 0.5rem 0;
   border-style: solid;
   border-color: red;
-  width: 75vh;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
+#main-heading {
+  margin: 0 0 0.5rem 0;
+}
+
 #intro-container {
+  margin: 0 0 1rem 0;
   border-style: solid;
   border-color: red;
-  width: 60vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+align-items: center;
 }
 
 #benefits-container {
   border-style: solid;
   border-color: red;
-  width: 60vh;
+  width: 80%;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .benefit-container {
   border-style: solid;
+  padding: 0.5rem 1rem 1rem 1rem;
   border-color: red;
-  width: 20vh;
-  height: 35vh;
+  width: 30%;
+  height: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
+justify-content: space-between;
+
+/* Glass effect on benefit cards */ 
+background: rgba(247, 247, 247, 0.22);
+border-radius: 20px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.5px);
+-webkit-backdrop-filter: blur(8.5px);
+border: 1px solid rgba(247, 247, 247, 0.32);
+
+}
+
+.img-benefit {
+  height: 10rem;
+  padding: 0 0 1rem 0;
 }
 
 #app-container {
   border-style: solid;
-  border-color: red;
-  width: 60vh;
+  border-color: green;
+  width: 90%;
+  margin: 1rem 0 0 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+#app-container-content {
+  border-style: solid;
+  border-color: purple;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+
 }
 
 #app-container-icons {
   border-style: solid;
   border-color: red;
   border: 2px;
-  width: 25vh;
+  width: 30vh;
   display: flex;
   flex-direction: row;
+}
+
+.app-icon {
+  margin: 1rem;
+
 }
 
 #app-container-left {
@@ -151,22 +204,15 @@ header {
 }
 
 footer {
+  width: 90%;
   border-style: solid;
   border-color: red;
+  margin: 1rem;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: center;
 }
 
-#app-icons-left-side {
-  border-style: solid;
-  border-color: red;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-}
-
-#app-icons-right-side {
-  border-style: solid;
-  border-color: red;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-}
+ul {
+  list-style: none;
+} */
