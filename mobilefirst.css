@@ -1,0 +1,79 @@
+ul {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(250, 245, 238, 0.985);
+  font-family: "Poppins", sans-serif;
+}
+
+#nav-section {
+  background-color: rgba(255, 255, 255, 0.724);
+  width: 100%;
+}
+
+#header-left {
+  padding: 0.5rem 1rem 0.5rem 2rem;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header-desktop-title {
+  display: none;
+}
+
+#container {
+  border: 2px solid red;
+  width: 95%;
+  padding: 0.5rem;
+}
+
+#intro-container {
+  border: 2px solid red;
+  width: 95%;
+  padding: 0.5rem;
+}
+
+#benefits-container {
+  border: 2px solid royalblue;
+  width: 95%;
+  padding: 0.5rem;
+}
+
+#app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+// for all screens 425px and less
+@media screen and (max-width: 320px) {
+}
+
+/* IMAGES */
+
+.img-benefit {
+  height: 7rem;
+}
+
+#header-logo {
+  width: 2.5rem;
+}
+
+.mobile-apps {
+  width: 10rem;
+}
+#app-image-left {
+  width: 8rem;
+}
+
+#img-benefit0 {
+  display: none;
+}
