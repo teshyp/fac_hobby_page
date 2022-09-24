@@ -1,3 +1,9 @@
+/* Built for mobile-S 320px first */
+
+html {
+  font-size: 0.9rem;
+}
+
 ul {
   list-style: none;
 }
@@ -7,8 +13,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 100%;
-  background-color: rgba(250, 245, 238, 0.985);
+  background-color: rgba(243, 231, 214, 0.985);
   font-family: "Poppins", sans-serif;
 }
 
@@ -17,9 +22,20 @@ body {
   width: 100%;
 }
 
+.header-titles {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: rgb(212, 100, 2);
+}
+
+#main-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(36, 74, 144);
+}
+
 #header-left {
   padding: 0.5rem 1rem 0.5rem 2rem;
-  border: 2px solid red;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -31,36 +47,91 @@ body {
 }
 
 #container {
-  border: 2px solid red;
   width: 95%;
   padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #intro-container {
-  border: 2px solid red;
-  width: 95%;
+  width: 80%;
   padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intro-text {
+  text-align: justify;
 }
 
 #benefits-container {
-  border: 2px solid royalblue;
-  width: 95%;
-  padding: 0.5rem;
+  width: 80%;
+  padding: 0rem;
+}
+
+.benefit-container {
+  padding: 0.3rem 0.4rem 0.1rem 1rem;
+  margin: 0.5rem 1rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+
+  /* From https://css.glass */
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.53);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-header {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: rgb(2, 110, 212);
 }
 
 #app-container {
-  display: flex;
-  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  padding: 0 0 2rem 0;
 }
 
-// for all screens 425px and less
-@media screen and (max-width: 320px) {
+#app-container-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#list-title {
+  padding: 0 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(212, 100, 2);
+}
+
+.app-links {
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+footer {
+  margin: 0.7rem 0 0.4rem 0;
+  background-color: rgba(243, 231, 214, 0.985);
+  font-size: 0.7rem;
 }
 
 /* IMAGES */
 
+#intro-img {
+  height: 8rem;
+}
+
 .img-benefit {
-  height: 7rem;
+  display: none;
+  height: 4rem;
 }
 
 #header-logo {
@@ -68,12 +139,98 @@ body {
 }
 
 .mobile-apps {
-  width: 10rem;
+  width: 5rem;
 }
+
+#mobile-app-1 {
+  display: none;
+}
+
+#mobile-app-app {
+  margin: 3rem 2rem 0 0;
+}
+
 #app-image-left {
   width: 8rem;
 }
 
-#img-benefit0 {
+#img-benefit0,
+#mobile-app-2 {
   display: none;
+}
+
+/* for tablets 768px */
+@media screen and (min-width: 768px) {
+  /* tidy into images etc */
+
+  html {
+    font-size: 1rem;
+  }
+
+  .header-titles {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: rgb(212, 100, 2);
+  }
+
+  #headerDate {
+    font-size: 1.5rem;
+  }
+
+  #header-logo {
+    width: 3.5rem;
+  }
+
+  #intro-img {
+    display: none;
+  }
+
+  .benefit-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .benefit-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem 0.5rem 1rem;
+  }
+
+  .benefit-header {
+    margin: 1rem 0 0.1rem 0;
+  }
+
+  .img-benefit {
+    display: block;
+    height: 10rem;
+  }
+
+  #img-benefit0 {
+    display: none;
+  }
+
+  #mobile-app-2,
+  #mobile-app-1 {
+    display: block;
+    width: 9rem;
+  }
+
+  #mobile-app-app {
+    display: none;
+  }
+
+  #app-list {
+    margin: 0 5rem 0rem 0rem;
+  }
+
+  #app-container {
+    padding: 1rem 0 1rem 0;
+    background-color: #fef7f6;
+  }
+
+  #app-list {
+    text-align: center;
+  }
 }
