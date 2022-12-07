@@ -79,6 +79,7 @@ body {
 
 #intro-text {
   text-align: justify;
+  font-weight: bolder;
 }
 
 #benefits-container {
